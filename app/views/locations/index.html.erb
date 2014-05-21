@@ -1,0 +1,42 @@
+<h1>Hello <%= current_user.name %>!</h1>
+
+  <% @nearby_as_selected_by_geocoder_locations.each do |location| %>
+
+<div id="listing">
+
+  <div class="gravatar_name_distance">
+    <div>
+      <%= image_tag current_user.gravatar_hash %>
+    </div>
+    <div>
+      <%= location.message.user.name %>  <!-- #FIX THIS LATER -->
+    </div>
+    <div>
+      <%= location.address %>
+    </div>
+  </div>
+
+
+  <div>
+    <p><%= location.message.summary %></p>
+    <p><%= location.message.content %></p>
+  </div>
+
+
+  <div>
+    <p>DISTANCE</p>
+    <p>Distance Geocoder code</p>
+  </div>
+
+</div>
+
+
+
+
+</div>
+
+    <% end %>
+
+
+
+

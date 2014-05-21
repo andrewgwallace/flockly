@@ -1,0 +1,25 @@
+<% gravatar_url = "http://www.gravatar.com/avatar/" %>
+<% email = user.email %>
+
+<h1>Sign Up</h1>
+<%= link_to "Log In", login_path %>
+<%= form_for user do |f| %>
+  <p>
+    <%= f.text_field :name, { placeholder: "name" } %>
+  </p>
+  <p>
+    <%= f.text_field :email, { placeholder: "email" } %>
+  </p>
+  <p>
+    <%= f.password_field :password, { placeholder: "password" } %>
+  </p>
+  <p>
+
+    <%= f.password_field :password_confirmation, { placeholder: "password again" } %>
+  </p>
+
+  <%= f.hidden_field :gravatar_hash, {value: gravatar_url + Digest::MD5.hexdigest(email.to_s) + "?d=mm" } %>
+  <p>
+    <%= f.submit 'Sign Up' %>
+  </p>
+<% end %>

@@ -1,0 +1,19 @@
+<h3>Join a Flock</h3>
+
+<%= form_tag do %>
+<p>
+  <%= label_tag :Address %><br>
+  <%= text_field_tag :address %>
+</p>
+<p>
+  <%= label_tag :Summary %><br>
+  <%= text_field_tag :summary %>
+</p>
+<p>
+  <%= label_tag :Content %><br>
+  <%= text_area_tag :content %>
+</p>
+<p>
+  <%= submit_tag "Submit" %>
+</p>
+<% end %>

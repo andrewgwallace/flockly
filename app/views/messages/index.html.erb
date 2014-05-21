@@ -1,0 +1,26 @@
+<h1>Hello <%= current_user.name %>!</h1>
+
+<h3> Users At Your Address: </h3>
+  <% @messages_at_address.each do |message| %>
+<p>
+    id: <%= message.id %>
+    summary: <%= message.summary %><br>
+    content: <%= message.content %>
+    location: <%= message.location.id %>, <%= message.location.address %>
+</p>
+
+    <% end %>
+
+
+
+
+<h3>All Messages:</h3>
+  <% @all_messages.each do |message| %>
+<p>
+    id: <%= message.id %>
+    summary: <%= message.summary %><br>
+    content: <%= message.content %>
+    location: <%= message.location.id %>, <%= message.location.address %>
+</p>
+
+    <% end %>
