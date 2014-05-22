@@ -5,7 +5,14 @@ class MessagesController < ApplicationController
     @all_messages = Message.all
 
     # all_locations = Location.all
-    @matching_locations = Location.where({address: current_user.message.location.address})
+    # @logged_in_users = User.where(logged_in: true)
+
+    # array_of_logged_in_user_ids = []
+    #     @logged_in_users.each { |user| array_of_logged_in_user_ids << user.id }
+
+    # @matching_locations = Location.where({address: current_user.message.location.address})
+
+    # @matching_locations_where_users_are_logged_in = @matching_locations.where(???? USER ID included in array???? )
 
     # @nearby_messages = Message.all.each
     # render json: @matching_locations

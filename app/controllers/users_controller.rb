@@ -20,24 +20,6 @@ class UsersController < ApplicationController
     end
   end
 
-  def login
-
-  end
-
-  def process_login
-    email = params[:email]
-    password = params[:password]
-
-    @current_user = User.authenticated?(email, password)
-
-    if @current_user
-      redirect_to 'messages/new'
-    else
-      render text: "Invalid email or password.  Please try again."
-    end
-
-  end
-
 
   # def delete
   #  @user = User.destroy(params[:id])

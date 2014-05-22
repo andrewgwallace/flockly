@@ -16,10 +16,33 @@ class SessionsController < ApplicationController
     end
   end
 
-  def destroy
-    session[:user_id] = nil
-    redirect_to login_url, :notice => "You are now logged out."
+
+def login
+
+end
+
+  def process_login
+    email = params[:email]
+    password = params[:password]
+
+    @current_user = User.authenticated?(email, password)
+
+    if @current_user
+      @current_user.update({logged_in: true})
+      redirect_to 'messages/new'
+    else
+      render text: "Invalid email or password.  Please try again."
+    end
   end
 
+  def destroy
+    # @current_user.update({logged_in: false})
+    # current_user.message.location.destroy
+    # current_user.message.destroy
+    # location.message.id = nil
+    session[:user_id] = nil
+
+    redirect_to login_url, :notice => "You are now logged out."
+  end
 
 end
