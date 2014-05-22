@@ -2,34 +2,24 @@
 
 <div id="listing">
 
-  <div class="gravatar_name_distance">
+  <div id="grav_name_distance">
     <div>
       <%= image_tag current_user.gravatar_hash %>
     </div>
 
-    <div>
-      <%= location.message.user.name %>
+    <div class="name_address">
+      <p><%= location.message.user.name %></p>
+      <p><%= location.address %></p>
     </div>
 
-    <div>
-      <%= location.address %>
-    </div>
   </div>
 
-
+  <div id="summary_content">
   <div>
-    <p><%= location.message.summary %></p>
-    <p><%= location.message.content %></p>
+    <p class="summary"><%= location.message.summary %></p>
+    <p class="content"><%= location.message.content %></p>
   </div>
-
-
-<!--   <div>
-    <p>DISTANCE</p>
-    <p>Distance Geocoder code</p>
-  </div> -->
-
-</div>
-
+  </div
 
 <% end %>
 

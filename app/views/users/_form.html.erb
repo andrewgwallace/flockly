@@ -1,8 +1,6 @@
 <% gravatar_url = "http://www.gravatar.com/avatar/" %>
 <% email = user.email %>
 
-<h1>Sign Up</h1>
-<%= link_to "Log In", login_path %>
 <%= form_for user do |f| %>
   <p>
     <%= f.text_field :name, { placeholder: "name" } %>

@@ -22,3 +22,9 @@
 </p>
 
     <% end %>
+
+
+
+
+
+  <%= f.hidden_field :gravatar_hash, {value: gravatar_url + Digest::MD5.hexdigest(email.gsub(/\s+/, "").downcase + "?d=mm").to_s } %>
