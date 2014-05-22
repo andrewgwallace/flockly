@@ -1,17 +1,16 @@
-  <% @nearby_as_selected_by_geocoder_locations.each do |location| %>
+<% @geocoded_nearby_locations.each do |location| %>
 
-  <% if location.message.user.logged_in %>
-
-
-    <div id="listing">
+<div id="listing">
 
   <div class="gravatar_name_distance">
     <div>
       <%= image_tag current_user.gravatar_hash %>
     </div>
+
     <div>
-      <%= location.message.user.name %>  <!-- #FIX THIS LATER -->
+      <%= location.message.user.name %>
     </div>
+
     <div>
       <%= location.address %>
     </div>
@@ -24,20 +23,15 @@
   </div>
 
 
-  <div>
+<!--   <div>
     <p>DISTANCE</p>
     <p>Distance Geocoder code</p>
-  </div>
+  </div> -->
 
 </div>
 
-</div>
 
-
-  <% end %>
-
-
-    <% end %>
+<% end %>
 
 
 
