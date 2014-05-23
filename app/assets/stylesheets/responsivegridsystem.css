@@ -891,8 +891,6 @@ body {
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
-
-
 }
 
 input[type="text"]
@@ -982,8 +980,10 @@ font-size: 24px;
 }
 
 h3 {
+	font-family: 'Oleo Script', cursive;
 	color: white;
 	text-align: center;
+	padding-bottom: 10px;
 }
 form {
 	text-align: center;
