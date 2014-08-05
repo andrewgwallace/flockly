@@ -1,0 +1,155 @@
+body {
+  background: url(background.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+input[type="text"]
+{
+height: 35px;
+font-size: 25px;
+width: 30%;
+background: rgba(0,0,0,0.8);
+border-radius: 5px;
+border-style: solid;
+border-width: 1px;
+border-color: white;
+padding: 0 15px 0 15px;
+margin: -10px 0 -10px 0;
+-moz-box-shadow: none;
+-webkit-box-shadow: none;
+box-shadow: none;
+outline: none;
+color: white;
+}
+
+
+input[type="password"]
+{
+height: 35px;
+font-size: 25px;
+width: 30%;
+background: rgba(0,0,0,0.8);
+border-radius: 5px;
+border-style: solid;
+border-width: 1px;
+border-color: white;
+padding: 0 15px 0 15px;
+margin: -10px 0 -10px 0;
+-moz-box-shadow: none;
+-webkit-box-shadow: none;
+box-shadow: none;
+outline: none;
+color: white;
+}
+
+.content
+{
+height: 200px;
+font-size: 18px;
+width: 30%;
+background: rgba(0,0,0,0.8);
+border-radius: 5px;
+border-style: solid;
+border-width: 1px;
+border-color: white;
+padding: 0 15px 0 15px;
+margin: -10px 0 -10px 0;
+-moz-box-shadow: none;
+-webkit-box-shadow: none;
+box-shadow: none;
+outline: none;
+color: white;
+}
+
+h1 {
+font-family: 'Oleo Script', cursive;
+color: white;
+font-size: 60px;
+
+}
+#title {
+  float: left;
+  padding-top: 0;
+  padding-left: 20px;
+  padding-bottom: 0;
+  padding-right: 20px
+}
+
+
+h1 {
+font-family: 'Oleo Script', cursive;
+color: white;
+font-size: 36px;
+}
+
+h2 {
+font-family: 'Satisfy', cursive;
+color: white;
+font-size: 24px;
+
+}
+
+h3 {
+  font-family: 'Oleo Script', cursive;
+  color: white;
+  text-align: center;
+  padding-bottom: 10px;
+}
+form {
+  text-align: center;
+}
+
+
+#logger {
+  float: right;
+  padding-top: 15px;
+  padding-left: 20px;
+  padding-bottom: 0;
+  padding-right: 25px
+}
+
+#login {
+  text-align: center;
+}
+
+p {
+  color: white;
+}
+
+#listing {
+  position: relative;
+  z-index: -1;
+  width: 100%;
+  padding: 5px;
+  /*background: rgba(0,0,0,0.8);*/
+}
+
+#grav_name_distance {
+  float: left;
+  width: 15%;
+}
+
+.name_address {
+  color: white;
+  font-family: sans-serif;
+  font-size: 14px;
+}
+
+#summary_content{
+
+}
+
+
+.summary {
+  font-size: 18px;
+}
+
+.content {
+  font-family: sans-serif;
+  font-size: 12px;
+
+
+}

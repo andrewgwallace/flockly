@@ -22,7 +22,6 @@ class MessagesController < ApplicationController
 
   end
 
-  # binding.pry
   def create
     # render json: params
     # unless params[:address] == nil
